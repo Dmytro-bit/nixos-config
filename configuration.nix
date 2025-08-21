@@ -10,8 +10,9 @@
       ./hardware-configuration.nix
     ];
 
-  #Flake
-  
+  #Enable Flake
+  nix.settings.experimental-features = [ "nix-command" "flakes" ]; 
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -106,6 +107,7 @@
     git
   ];
 
+  environment.variables.EDITOR = "vim";
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
