@@ -22,7 +22,7 @@
 			{
 				home-manager.useGlobalPkgs = true;
 				home-manager.useUserPackages = true;
-				home-manager.users.dmytro = import ./home.nix;
+				home-manager.users.dmytro = import ./home/home.nix;
 			}
 			];
 		};
