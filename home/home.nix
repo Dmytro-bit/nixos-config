@@ -49,6 +49,7 @@
     discord
     telegram-desktop
     firefox
+    vscode
   ];
 
   # basic configuration of git, please change to your own
