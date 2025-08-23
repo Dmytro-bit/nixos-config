@@ -48,7 +48,6 @@
     spotify
     discord
     telegram-desktop
-    firefox
     vscode
   ];
 

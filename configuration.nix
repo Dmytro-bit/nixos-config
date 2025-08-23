@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, pkgs, hardware,... }:
 
 {
   imports =
@@ -53,6 +53,13 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
 
+  services.gnome.gnome-keyring.enable = true;
+
+  programs.sway = {
+    enable = true;
+    wrapperFeatures.gtk = true;
+  };
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -90,6 +97,16 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
+  services.blueman.enable = true;
+  hardware.bluetooth = {
+  enable = true;
+  powerOnBoot = true;
+  settings = {
+    General = {
+      Experimental = true; # Show battery charge of Bluetooth devices
+    };
+};
+};
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.dmytro = {
@@ -105,6 +122,8 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  programs.steam.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -113,8 +132,13 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
-    discord
     git
+    alejandra
+    grim
+    slurp
+    wl-clipboard
+    mako
+
   ];
 
   environment.variables.EDITOR = "vim";
