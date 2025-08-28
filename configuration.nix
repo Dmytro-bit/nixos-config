@@ -138,7 +138,9 @@
     slurp
     wl-clipboard
     mako
-
+    jetbrains.pycharm-professional
+    pipenv
+    python3
   ];
 
   environment.variables.EDITOR = "vim";
