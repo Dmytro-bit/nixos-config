@@ -3,7 +3,7 @@
     ./localization
     ./bluetooth
     ./audio
-    ./sway
+    ./hyprland
     ./programs
     ./neovim
   ];

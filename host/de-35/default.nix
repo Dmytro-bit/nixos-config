@@ -29,9 +29,8 @@
   networking.networkmanager.enable = true;
 
 
-  # Enable the KDE Plasma Desktop Environment.
+  # Enable display manager for Hyprland sessions.
   services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
 
   services.gnome.gnome-keyring.enable = true;
 
