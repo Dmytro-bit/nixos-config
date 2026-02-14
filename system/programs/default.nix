@@ -11,5 +11,7 @@
     jetbrains.pycharm-professional
     pipenv
     python3
+    wireguard-tools
+    protonvpn-gui
   ];
 }

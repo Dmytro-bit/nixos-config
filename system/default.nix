@@ -5,5 +5,6 @@
     ./audio
     ./sway
     ./programs
+    ./neovim
   ];
 }

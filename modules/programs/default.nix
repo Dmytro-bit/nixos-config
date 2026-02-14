@@ -38,5 +38,8 @@
     discord
     telegram-desktop
     vscode
+    libreoffice
+    vlc
+    totem
   ];
 }
