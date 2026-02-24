@@ -72,6 +72,9 @@
   nixpkgs.config.allowUnfree = true;
   
   environment.variables.EDITOR = "nvim";
+  environment.shellAliases = {
+	la = "ls -la";
+  }; 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
