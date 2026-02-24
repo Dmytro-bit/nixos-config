@@ -29,8 +29,9 @@
   networking.networkmanager.enable = true;
 
 
-  # Enable display manager for Hyprland sessions.
+  # Enable display manager.
   services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
 
   services.gnome.gnome-keyring.enable = true;
 
