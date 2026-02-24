@@ -5,6 +5,5 @@
     ./audio
     ./hyprland
     ./programs
-    ./neovim
   ];
 }

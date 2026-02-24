@@ -4,5 +4,6 @@
     ./git
     ./programs
     ./neovim
+    ./hyprland
   ];
 }
