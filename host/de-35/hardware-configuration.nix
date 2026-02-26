@@ -26,6 +26,7 @@
   fileSystems."/external" = {
     device = "/dev/disk/by-uuid/4d37fe8e-efdd-4f89-9d95-7c3c83ca2d8f";
     fsType="ext4";
+    options=["nofail" "x-systemd.device-timeout=5s"];
   };
 
   swapDevices = [ ];
