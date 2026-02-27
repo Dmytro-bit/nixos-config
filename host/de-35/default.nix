@@ -73,7 +73,9 @@
   
   environment.variables.EDITOR = "nvim";
   environment.shellAliases = {
-	la = "ls -la";
+	la = "eza -la";
+	ls = "eza";
+	ll = "eza -l";
   }; 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

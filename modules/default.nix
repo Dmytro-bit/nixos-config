@@ -5,5 +5,6 @@
     ./programs
     ./neovim
     ./tmux
+    ./eza
   ];
 }
