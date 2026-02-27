@@ -8,7 +8,6 @@
     slurp
     wl-clipboard
     mako
-    jetbrains.pycharm-professional
     pipenv
     python3
     wireguard-tools
