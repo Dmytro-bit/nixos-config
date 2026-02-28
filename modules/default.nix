@@ -7,5 +7,6 @@
     ./tmux
     ./eza
     ./spotify
+    ./signal
   ];
 }
