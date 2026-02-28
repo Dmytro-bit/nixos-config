@@ -29,7 +29,8 @@
     options=["nofail" "x-systemd.device-timeout=5s"];
   };
 
-  swapDevices = [ ];
+  swapDevices = [ 
+  ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
