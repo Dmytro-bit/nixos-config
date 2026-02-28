@@ -6,5 +6,6 @@
     ./neovim
     ./tmux
     ./eza
+    ./spotify
   ];
 }
