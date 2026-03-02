@@ -8,5 +8,6 @@
     ./eza
     ./spotify
     ./signal
+    ./postman
   ];
 }

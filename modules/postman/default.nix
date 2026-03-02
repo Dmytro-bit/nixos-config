@@ -1,0 +1,7 @@
+{...}:{
+
+	 programs.postman= {
+		enable=true;
+	};
+
+}
