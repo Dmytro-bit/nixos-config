@@ -1,7 +1,5 @@
-{...}:{
-
-	 programs.postman= {
-		enable=true;
-	};
-
+{pkgs, ...}:{
+	home.packages = with pkgs; [
+		postman
+  	];
 }
