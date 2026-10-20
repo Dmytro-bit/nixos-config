@@ -4,6 +4,10 @@
     ./git
     ./programs
     ./neovim
+    ./tmux
+    ./eza
+    ./spotify
+    ./signal
     ./hyprland
   ];
 }

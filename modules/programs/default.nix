@@ -1,6 +1,5 @@
 {lib, config, pkgs, ...}:{
   home.packages = with pkgs; [
-    neofetch
 
     # archives
     zip
@@ -10,7 +9,6 @@
 
     # utils
     ripgrep # recursively searches directories for a regex pattern
-    eza # A modern replacement for ‘ls’
     fzf # A command-line fuzzy finder
 
     # misc
@@ -37,7 +35,6 @@
     #programs
     discord
     telegram-desktop
-    vscode
     libreoffice
     vlc
     totem

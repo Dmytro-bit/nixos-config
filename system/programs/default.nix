@@ -8,10 +8,10 @@
     slurp
     wl-clipboard
     mako
-    jetbrains.pycharm-professional
     pipenv
     python3
     wireguard-tools
-    protonvpn-gui
+    proton-vpn
+    python313Packages.ipython
   ];
 }
