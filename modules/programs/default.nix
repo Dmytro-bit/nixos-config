@@ -1,6 +1,5 @@
 {lib, config, pkgs, ...}:{
   home.packages = with pkgs; [
-    neofetch
 
     # archives
     zip
@@ -36,7 +35,6 @@
     #programs
     discord
     telegram-desktop
-    vscode
     libreoffice
     vlc
     totem

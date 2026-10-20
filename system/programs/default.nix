@@ -11,7 +11,7 @@
     pipenv
     python3
     wireguard-tools
-    protonvpn-gui
+    proton-vpn
     python313Packages.ipython
   ];
 }
