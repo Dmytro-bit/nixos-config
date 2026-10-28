@@ -9,5 +9,6 @@
     ./spotify
     ./signal
     ./hyprland
+    ./codex
   ];
 }

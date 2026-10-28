@@ -7,6 +7,13 @@
 	    url = "github:nix-community/home-manager/release-26.05";
         inputs.nixpkgs.follows = "nixpkgs";
     };
+    
+    hyprland.url = "github:hyprwm/Hyprland";
+    
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
   };
 
   outputs = {nixpkgs, home-manager ,...}@inputs: {

@@ -33,6 +33,7 @@
     lsof # list open files
 
     #programs
+    firefox
     discord
     telegram-desktop
     libreoffice
