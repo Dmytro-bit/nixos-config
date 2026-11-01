@@ -1,5 +1,9 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
+  imports = [
+    ./hypridle.nix
+    ./hyprlock.nix
+  ];
+
   home.packages = with pkgs; [
     brightnessctl
     kitty
@@ -33,6 +37,7 @@
         "$mod, D, exec, $menu"
         "$mod SHIFT, Q, killactive"
         "$mod SHIFT, E, exit"
+        "$mod, L, exec, loginctl lock-session"
         "$mod, F, exec, firefox"
         "$mod, V, togglefloating"
 
