@@ -6,5 +6,6 @@
     ./hyprland
     ./sway
     ./programs
+    ./flatpak
   ];
 }
