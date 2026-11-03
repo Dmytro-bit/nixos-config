@@ -30,6 +30,14 @@
     };
   });
 in {
+  programs.firefox = {
+    enable = true;
+    profiles.default = {
+      path = "llwroys5.default";
+      settings."layout.css.devPixelsPerPx" = "0.9";
+    };
+  };
+
   home.packages = with pkgs; [
     # archives
     zip
@@ -63,10 +71,10 @@ in {
     lsof # list open files
 
     #programs
-    firefox
     discord
     telegram-desktop
     libreoffice
+    zathura
     vlc
     totem
 

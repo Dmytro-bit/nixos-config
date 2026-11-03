@@ -2,6 +2,7 @@
   imports = [
     ./hypridle.nix
     ./hyprlock.nix
+    ./waybar.nix
   ];
 
   home.packages = with pkgs; [
@@ -40,6 +41,7 @@
         "$mod, L, exec, loginctl lock-session"
         "$mod, F, exec, firefox"
         "$mod, V, togglefloating"
+        "$mod, V, centerwindow, 1"
 
         # Focus windows.
         "$mod, left, movefocus, l"
