@@ -1,7 +1,7 @@
-{...}:{
+{pkgs, ...}: {
+  home.packages = [pkgs.spotify];
 
-	programs.spotify-player = {
-		enable=true;
-	};
-
+  programs.spotify-player = {
+    enable = true;
+  };
 }

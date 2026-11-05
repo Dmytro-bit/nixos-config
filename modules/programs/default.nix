@@ -34,7 +34,13 @@ in {
     enable = true;
     profiles.default = {
       path = "llwroys5.default";
-      settings."layout.css.devPixelsPerPx" = "0.9";
+      settings = {
+        "browser.compactmode.show" = true;
+        "browser.contentblocking.category" = "strict";
+        "browser.uidensity" = 1;
+        "privacy.resistFingerprinting" = true;
+        "privacy.resistFingerprinting.letterboxing" = true;
+      };
     };
   };
 
