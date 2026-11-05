@@ -3,6 +3,7 @@
     ./hypridle.nix
     ./hyprlock.nix
     ./waybar.nix
+    ./hyprpaper.nix
   ];
 
   home.packages = with pkgs; [
