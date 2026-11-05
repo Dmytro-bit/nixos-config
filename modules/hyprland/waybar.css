@@ -1,4 +1,16 @@
 window#waybar {
-    background: #16191C;
-    color: #AAB2BF;
-  }
+  background: #16191c;
+  color: #aab2bf;
+}
+
+#battery {
+  padding: 0 8px;
+}
+
+#battery.warning {
+  color: #f9e2af;
+}
+
+#battery.critical {
+  color: #f38ba8;
+}
