@@ -30,6 +30,8 @@
     };
   });
 in {
+  home.sessionVariables.DOTNET_ROOT = "${pkgs.dotnet-sdk_10}/share/dotnet";
+
   programs.firefox = {
     enable = true;
     profiles.default = {
@@ -80,6 +82,7 @@ in {
     discord
     telegram-desktop
     libreoffice
+    kdePackages.gwenview
     zathura
     vlc
     totem
@@ -88,6 +91,8 @@ in {
     python314
     uv
     jetbrains.pycharm
+    jetbrains.rider
+    dotnet-sdk_10
 
     # Git workflow
     git-flow-next
