@@ -75,9 +75,10 @@
   # Shell settings
   environment.variables.EDITOR = "nvim";
   environment.shellAliases = {
-        la = "eza -la";
-        ls = "eza";
-        ll = "eza -l";
+    la = "eza -la";
+    ls = "eza";
+    ll = "eza -l";
+    rebuild-system = "sudo nixos-rebuild switch --flake git+file:/home/dmytro/nixos-config#nixos";
   };
 
   # List packages installed in system profile.
