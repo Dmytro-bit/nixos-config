@@ -1,16 +1,110 @@
-window#waybar {
-  background: #16191c;
-  color: #aab2bf;
+@define-color background rgba(22, 25, 28, 0.9);
+@define-color surface rgba(37, 40, 44, 0.92);
+@define-color text #d8dee9;
+@define-color muted #7f8792;
+@define-color accent #88c0d0;
+@define-color warning #ebcb8b;
+@define-color critical #bf616a;
+
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 500;
 }
 
+window#waybar {
+  background: transparent;
+  color: @text;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+  padding: 0 5px;
+  background: @background;
+  border-radius: 9px;
+}
+
+#workspaces button {
+  min-width: 20px;
+  padding: 0 6px;
+  color: @muted;
+  background: transparent;
+  border-radius: 7px;
+}
+
+#workspaces button:hover {
+  color: @text;
+  background: @surface;
+}
+
+#workspaces button.active {
+  color: @background;
+  background: @accent;
+}
+
+#workspaces button.urgent {
+  color: @background;
+  background: @critical;
+}
+
+#clock {
+  padding: 0 7px;
+}
+
+#temperature,
 #battery {
-  padding: 0 8px;
+  padding: 0 7px;
+}
+
+#temperature.critical {
+  color: @critical;
+}
+
+#battery.charging,
+#battery.plugged {
+  color: @accent;
 }
 
 #battery.warning {
-  color: #f9e2af;
+  color: @warning;
 }
 
 #battery.critical {
-  color: #f38ba8;
+  color: @critical;
+}
+
+tooltip {
+  padding: 6px;
+  color: @text;
+  background: @background;
+  border: 1px solid @surface;
+  border-radius: 8px;
+}
+
+/* Larger controls on the unscaled 2560x1440 external monitor. */
+window#waybar.external * {
+  font-size: 15px;
+}
+
+window#waybar.external .modules-left,
+window#waybar.external .modules-center,
+window#waybar.external .modules-right {
+  padding: 0 9px;
+  border-radius: 12px;
+}
+
+window#waybar.external #workspaces button {
+  min-width: 30px;
+  padding: 0 10px;
+  border-radius: 9px;
+}
+
+window#waybar.external #clock,
+window#waybar.external #temperature,
+window#waybar.external #battery {
+  padding: 0 10px;
 }
